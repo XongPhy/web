@@ -1,0 +1,11 @@
+package com.example.web.Repositories;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+import com.example.web.Model.Size;
+
+
+public interface SizeRepository extends JpaRepository<Size, Long> {
+}

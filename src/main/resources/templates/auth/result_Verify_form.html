@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Verify Form</title>
+</head>
+<body>
+    <h2>Verify Form</h2>
+
+    <form action="/verify" method="POST">	
+			<div th:if="${error != null}">
+			<p class="text-danger">[[${error}]]</p>
+		</div>
+		<div th:if="${message != null}">
+			<p class="text-warning">[[${message}]]</p>
+		</div>
+    </form>
+</body>
+</html>
